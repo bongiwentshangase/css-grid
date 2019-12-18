@@ -1,0 +1,36 @@
+.red{
+   
+   
+  background-color: red;
+  grid-area:red-s;
+}
+.green{
+
+  background-color: green;
+  grid-area: green-s;
+}
+.blue{
+  grid-area: blue-s;
+  background-color: blue;
+}
+.gray{
+  grid-area: gray-s;
+  background-color: gray;
+}
+
+  .box{
+    width: 70px;
+    height: 50px;
+    border: 1px solid black;    
+    font-size: 20px;
+   margin-top:5px ;
+   text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ". red-s green-s ."
+    "blue-s . . gray-s"
+}
